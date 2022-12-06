@@ -15,7 +15,7 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
         { text: "슬롯", id: 2, width: '11.5625rem', path: "/cscenter/all/faq/slot" },
         { text: "스포츠", id: 3, width: '13.4375rem', path: "/cscenter/all/faq/sports" },
         { text: "호텔카지노", id: 4, width: '18.3125rem', path: "/cscenter/all/faq/e-sports1" },
-        { text: "e-스포츠", id: 5, width: '15.3125rem', path: "/cscenter/all/faq/e-sports" },
+        { text: "e-스포츠", id: 5, width: '15.3125rem', path: "/cscenter/all/faq/e-sports", leftScrollValue2: 842 },
         { text: "미니게임", id: 6, width: '15.3125rem', path: "/cscenter/all/faq/minigame" },
         { text: "키론가상게임", width: '20.3125rem', id: 7, path: "/cscenter/all/faq/ar-game" },
         { text: "피싱게임", width: '16.3125rem', id: 8, path: "/cscenter/all/faq/ar-game1" },

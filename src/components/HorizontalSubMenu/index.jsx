@@ -18,7 +18,8 @@ const HorizontalSubMenu = ({
         if (withoutFirst && pathname !== '/cscenter/all/contact/all/other') {
             horizontalsScroll(itemsArray, 't', 'scroll-wrapper12')
         }
-    }, [itemsArray, pathname, withoutFirst])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     function TabsList({ items }) {
         return items.map((item, index) => (
@@ -42,7 +43,7 @@ const HorizontalSubMenu = ({
                     onPointerUp={() => {
                         setHover(null)
                         if (pathname !== item.path) {
-                            horizontalsScroll(itemsArray, 't', 'scroll-wrapper12', index, items.length -1 === index ? 200 : null)
+                            horizontalsScroll(itemsArray, 't', 'scroll-wrapper12', index, items.length - 1 === index ? 200 : null, item.leftScrollValue2 || 0)
                             navigate(item.path)
                             setSelectedTab(item.id)
                             if (setSelectedSubTab !== null) {
